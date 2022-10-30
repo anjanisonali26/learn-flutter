@@ -13,12 +13,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        primarySwatch: Colors.cyan,
+        primarySwatch: ColorPalette.purpleColor,
         primaryColor: primaryColor,
         canvasColor: Colors.transparent
       ),
-      debugShowCheckedModeBanner: false,
       home: WelcomePages()
     );
   }
